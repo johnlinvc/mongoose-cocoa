@@ -16,6 +16,7 @@
 		1B328EBF1546A9AC0049421D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B328EBE1546A9AC0049421D /* ViewController.m */; };
 		1B328EC21546A9AC0049421D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B328EC01546A9AC0049421D /* ViewController.xib */; };
 		1B328ED61546AC960049421D /* MongooseCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B328ED51546AC960049421D /* MongooseCocoa.m */; };
+		1B328EDA1546AEA90049421D /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B328ED81546AEA90049421D /* mongoose.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		1B328EC11546A9AC0049421D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		1B328ED41546AC960049421D /* MongooseCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MongooseCocoa.h; path = ../../src/MongooseCocoa.h; sourceTree = "<group>"; };
 		1B328ED51546AC960049421D /* MongooseCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MongooseCocoa.m; path = ../../src/MongooseCocoa.m; sourceTree = "<group>"; };
+		1B328ED81546AEA90049421D /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mongoose.c; path = ../../src/mongoose.c; sourceTree = "<group>"; };
+		1B328ED91546AEA90049421D /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mongoose.h; path = ../../src/mongoose.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 		1B328EB11546A9AC0049421D /* MongooseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1B328ED81546AEA90049421D /* mongoose.c */,
+				1B328ED91546AEA90049421D /* mongoose.h */,
 				1B328EBA1546A9AC0049421D /* AppDelegate.h */,
 				1B328EBB1546A9AC0049421D /* AppDelegate.m */,
 				1B328EBD1546A9AC0049421D /* ViewController.h */,
@@ -169,6 +174,7 @@
 				1B328EBC1546A9AC0049421D /* AppDelegate.m in Sources */,
 				1B328EBF1546A9AC0049421D /* ViewController.m in Sources */,
 				1B328ED61546AC960049421D /* MongooseCocoa.m in Sources */,
+				1B328EDA1546AEA90049421D /* mongoose.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

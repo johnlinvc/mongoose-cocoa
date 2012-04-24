@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#include "mongoose.h"
 @interface MongooseCocoa : NSObject
-
+-(void)start;
+-(void)stop;
 @end
