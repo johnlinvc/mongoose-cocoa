@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #include "mongoose.h"
 @interface MongooseCocoa : NSObject
+@property (nonatomic,assign) struct mg_context *ctx;
 -(void)start;
 -(void)stop;
 @end

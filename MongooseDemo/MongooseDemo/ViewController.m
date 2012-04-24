@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "MongooseCocoa.h"
 @interface ViewController ()
 
 @end
@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    MongooseCocoa * httpServer = [[MongooseCocoa alloc] init];
+    [httpServer start];
 }
 
 - (void)viewDidUnload
