@@ -18,6 +18,10 @@ void * event_handler(enum mg_event event, struct mg_connection *conn, const stru
     ctx = mg_start(&event_handler, NULL, options);
 }
 
+-(void)stop{
+    mg_stop(ctx);
+}
+
 
 @end
 void * event_handler(enum mg_event event, struct mg_connection *conn, const struct mg_request_info *request_info){
