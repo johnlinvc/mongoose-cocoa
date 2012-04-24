@@ -15,6 +15,7 @@
 		1B328EBC1546A9AC0049421D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B328EBB1546A9AC0049421D /* AppDelegate.m */; };
 		1B328EBF1546A9AC0049421D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B328EBE1546A9AC0049421D /* ViewController.m */; };
 		1B328EC21546A9AC0049421D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B328EC01546A9AC0049421D /* ViewController.xib */; };
+		1B328ED61546AC960049421D /* MongooseCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B328ED51546AC960049421D /* MongooseCocoa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		1B328EBD1546A9AC0049421D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1B328EBE1546A9AC0049421D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1B328EC11546A9AC0049421D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		1B328ED41546AC960049421D /* MongooseCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MongooseCocoa.h; path = ../../src/MongooseCocoa.h; sourceTree = "<group>"; };
+		1B328ED51546AC960049421D /* MongooseCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MongooseCocoa.m; path = ../../src/MongooseCocoa.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				1B328EBE1546A9AC0049421D /* ViewController.m */,
 				1B328EC01546A9AC0049421D /* ViewController.xib */,
 				1B328EB21546A9AC0049421D /* Supporting Files */,
+				1B328ED41546AC960049421D /* MongooseCocoa.h */,
+				1B328ED51546AC960049421D /* MongooseCocoa.m */,
 			);
 			path = MongooseDemo;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				1B328EB81546A9AC0049421D /* main.m in Sources */,
 				1B328EBC1546A9AC0049421D /* AppDelegate.m in Sources */,
 				1B328EBF1546A9AC0049421D /* ViewController.m in Sources */,
+				1B328ED61546AC960049421D /* MongooseCocoa.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +278,7 @@
 				1B328EC71546A9AC0049421D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
