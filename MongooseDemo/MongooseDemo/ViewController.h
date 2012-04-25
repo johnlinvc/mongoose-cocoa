@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "MongooseCocoa.h"
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<MongooseCocoaDelegate>
 
 @end
