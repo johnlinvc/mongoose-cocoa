@@ -11,6 +11,14 @@ void * event_handler(enum mg_event event, struct mg_connection *conn, const stru
 
 @implementation MongooseCocoa
 @synthesize ctx,delegate;
+
+-(id)initWithDelegate:(id<MongooseCocoaDelegate>) _delegate{
+    if([self init]){
+        self.delegate = _delegate;
+    }
+    return self;
+}
+
 -(void)start{
     NSArray * option = [NSArray arrayWithObjects:@"listening_ports",@"8880", nil];
     [self startWithOption:option];

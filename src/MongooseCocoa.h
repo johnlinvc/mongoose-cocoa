@@ -17,6 +17,7 @@
 @interface MongooseCocoa : NSObject
 @property (nonatomic,assign) struct mg_context *ctx;
 @property (nonatomic,assign) id<MongooseCocoaDelegate> delegate;
+-(id)initWithDelegate:(id<MongooseCocoaDelegate>) delegate;
 -(void)startWithOption:(NSArray *)option;
 -(void)start;
 -(void)stop;

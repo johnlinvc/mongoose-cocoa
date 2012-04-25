@@ -18,8 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    MongooseCocoa * httpServer = [[MongooseCocoa alloc] init];
-    httpServer.delegate = self;
+    MongooseCocoa * httpServer = [[MongooseCocoa alloc] initWithDelegate:self];
     [httpServer start];
 }
 
