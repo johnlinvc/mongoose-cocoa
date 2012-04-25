@@ -12,10 +12,28 @@ void * event_handler(enum mg_event event, struct mg_connection *conn, const stru
 @implementation MongooseCocoa
 @synthesize ctx,delegate;
 -(void)start{
-    const char * options[] = {
-        "listening_ports","8880",NULL
-    };
-    ctx = mg_start(&event_handler, self, options);
+    NSArray * option = [NSArray arrayWithObjects:@"listening_ports",@"8880", nil];
+    [self startWithOption:option];
+}
+
+
+-(void)startWithOption:(NSArray *)option{
+    int count = option.count;
+    const char ** mg_option = malloc(sizeof(char*) * count +1); 
+    [option enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSString * s = (NSString*) obj;
+        const char * cs = [s cStringUsingEncoding:NSUTF8StringEncoding];
+        int len = strlen(cs);
+        char * cpy = (char*)malloc(sizeof(char)*(len+1));
+        strncpy(cpy, cs, len);
+        mg_option[idx] =  cpy;
+    }];
+    mg_option[count] = NULL;
+    ctx = mg_start(&event_handler, self, mg_option);
+    for (int i=0; i<count; i++) {
+        free((void*)mg_option[i]);
+    }
+    free(mg_option);
 }
 
 -(void)stop{
